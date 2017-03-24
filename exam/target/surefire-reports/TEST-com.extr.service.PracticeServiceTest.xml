@@ -1,0 +1,1879 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="9" failures="0" name="com.extr.service.PracticeServiceTest" time="26.5" errors="9" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="H:\Program Files\Java\jre1.8.0_45\bin"/>
+    <property name="java.vm.version" value="25.45-b02"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\BaiduYunDownload\毕设资料\Exam++网络考试\examxx"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\BaiduYunDownload\毕设资料\Exam++网络考试\examxx"/>
+    <property name="java.runtime.version" value="1.8.0_45-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="H:\Program Files\Java\jre1.8.0_45\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Arthur\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="I:\Workspace\eclipse\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf146810873104756898.tmp"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="H:\Program Files\Java\jre1.8.0_45\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;H:/Program Files/Java/jre1.8.0_45/bin/server;H:/Program Files/Java/jre1.8.0_45/bin;H:/Program Files/Java/jre1.8.0_45/lib/amd64;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;H:\Program Files\Java\jdk1.8.0_45\bin;H:\Program Files\Java\jdk1.8.0_45\jre\bin;C:\windows\System32\WindowsPowerShell\v1.0\;H:\Program Files\Git\cmd;H:\Program Files\nodejs\;H:\Program Files\wamp\bin\mysql\mysql5.6.17\bin;C:\Users\Arthur\AppData\Roaming\npm;H:\Program Files (x86)\eclipse;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Arthur"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="user.name" value="Arthur"/>
+    <property name="java.class.path" value="/H:/Program Files (x86)/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.6.2.20150902-0001/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="H:\Program Files\Java\jre1.8.0_45"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_45"/>
+    <property name="java.ext.dirs" value="H:\Program Files\Java\jre1.8.0_45\lib\ext;C:\windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="H:\Program Files\Java\jre1.8.0_45\lib\resources.jar;H:\Program Files\Java\jre1.8.0_45\lib\rt.jar;H:\Program Files\Java\jre1.8.0_45\lib\sunrsasign.jar;H:\Program Files\Java\jre1.8.0_45\lib\jsse.jar;H:\Program Files\Java\jre1.8.0_45\lib\jce.jar;H:\Program Files\Java\jre1.8.0_45\lib\charsets.jar;H:\Program Files\Java\jre1.8.0_45\lib\jfr.jar;H:\Program Files\Java\jre1.8.0_45\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\BaiduYunDownload\毕设资料\Exam++网络考试\examxx\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.extr.service.PracticeServiceTest" name="testAddExecisePaper" time="2.556">
+    <error message="No bean named &apos;PracticeService&apos; is defined" type="org.springframework.beans.factory.NoSuchBeanDefinitionException">org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named &apos;PracticeService&apos; is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:568)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1102)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:278)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1117)
+	at com.extr.service.PracticeServiceTest.testAddExecisePaper(PracticeServiceTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>16:41:14,985 INFO  org.springframework.context.support.AbstractApplicationContext prepareRefresh:510 -&gt; Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@492691d7: startup date [Wed Mar 22 16:41:14 CST 2017]; root of context hierarchy
+16:41:14,988 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions:315 -&gt; Loading XML bean definitions from file [D:\BaiduYunDownload\毕设资料\Exam++网络考试\examxx\src\main\webapp\WEB-INF\spring\root-context.xml]
+16:41:15,068 INFO  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider registerDefaultFilters:230 -&gt; JSR-330 &apos;javax.inject.Named&apos; annotation found and supported for component scanning
+16:41:15,287 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor &lt;init&gt;:140 -&gt; JSR-330 &apos;javax.inject.Inject&apos; annotation found and supported for autowiring
+16:41:15,295 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons:596 -&gt; Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4f0100a7: defining beans [org.springframework.aop.config.internalAutoProxyCreator,org.springframework.cache.annotation.AnnotationCacheOperationSource#0,org.springframework.cache.interceptor.CacheInterceptor#0,org.springframework.cache.config.internalCacheAdvisor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,transactionManager,sqlSessionFactory,myInterceptor,org.mybatis.spring.mapper.MapperScannerConfigurer#0,multipartResolver,cacheManager,ehcacheFactory,Test,userDetailsServiceImpl,commentService,examService,practiceServiceImpl,questionService,userServiceImpl,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,commentMapper,examMapper,examPaperMapper,practiceMapper,questionMapper,userMapper]; root of factory hierarchy
+16:41:15,303 INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean afterPropertiesSet:110 -&gt; Initializing EhCache CacheManager
+16:41:16,399 INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager:462 -&gt; Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ java.beans.IntrospectionException: java.lang.reflect.InvocationTargetException [numThreadsAwaitingCheckoutDefaultUser] ]
+16:41:17,403 ERROR org.apache.ibatis.logging.slf4j.Slf4jImpl error:39 -&gt; Could not get a databaseId from dataSource
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:350)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2393)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2430)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2215)
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:813)
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:334)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:119)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:143)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:132)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.initializeAutomaticTestTable(C3P0PooledConnectionPoolManager.java:772)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.createPooledConnectionPool(C3P0PooledConnectionPoolManager.java:696)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:257)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:271)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseProductName(VendorDatabaseIdProvider.java:76)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseName(VendorDatabaseIdProvider.java:61)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseId(VendorDatabaseIdProvider.java:49)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:445)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1547)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:608)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.&lt;init&gt;(FileSystemXmlApplicationContext.java:140)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.&lt;init&gt;(FileSystemXmlApplicationContext.java:84)
+	at com.extr.service.PracticeServiceTest.testAddExecisePaper(PracticeServiceTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300)
+	... 68 more
+</system-out>
+  </testcase>
+  <testcase classname="com.extr.service.PracticeServiceTest" name="addUserQuestionHistoryTest" time="2.381">
+    <error message="不能插入空的历史记录" type="java.lang.Exception">java.lang.Exception: 不能插入空的历史记录
+	at com.extr.service.QuestionServiceImpl.addUserQuestionHistory(QuestionServiceImpl.java:142)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:198)
+	at com.sun.proxy.$Proxy30.addUserQuestionHistory(Unknown Source)
+	at com.extr.service.PracticeServiceTest.addUserQuestionHistoryTest(PracticeServiceTest.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>16:41:17,555 INFO  org.springframework.context.support.AbstractApplicationContext prepareRefresh:510 -&gt; Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@2f16c6b3: startup date [Wed Mar 22 16:41:17 CST 2017]; root of context hierarchy
+16:41:17,556 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions:315 -&gt; Loading XML bean definitions from file [D:\BaiduYunDownload\毕设资料\Exam++网络考试\examxx\src\main\webapp\WEB-INF\spring\root-context.xml]
+16:41:17,613 INFO  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider registerDefaultFilters:230 -&gt; JSR-330 &apos;javax.inject.Named&apos; annotation found and supported for component scanning
+16:41:17,684 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor &lt;init&gt;:140 -&gt; JSR-330 &apos;javax.inject.Inject&apos; annotation found and supported for autowiring
+16:41:17,689 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons:596 -&gt; Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e4bd84a: defining beans [org.springframework.aop.config.internalAutoProxyCreator,org.springframework.cache.annotation.AnnotationCacheOperationSource#0,org.springframework.cache.interceptor.CacheInterceptor#0,org.springframework.cache.config.internalCacheAdvisor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,transactionManager,sqlSessionFactory,myInterceptor,org.mybatis.spring.mapper.MapperScannerConfigurer#0,multipartResolver,cacheManager,ehcacheFactory,Test,userDetailsServiceImpl,commentService,examService,practiceServiceImpl,questionService,userServiceImpl,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,commentMapper,examMapper,examPaperMapper,practiceMapper,questionMapper,userMapper]; root of factory hierarchy
+16:41:17,696 INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean afterPropertiesSet:110 -&gt; Initializing EhCache CacheManager
+16:41:18,772 INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager:462 -&gt; Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ java.beans.IntrospectionException: java.lang.reflect.InvocationTargetException [numThreadsAwaitingCheckoutDefaultUser] ]
+16:41:19,775 ERROR org.apache.ibatis.logging.slf4j.Slf4jImpl error:39 -&gt; Could not get a databaseId from dataSource
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:350)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2393)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2430)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2215)
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:813)
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:334)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:119)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:143)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:132)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.initializeAutomaticTestTable(C3P0PooledConnectionPoolManager.java:772)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.createPooledConnectionPool(C3P0PooledConnectionPoolManager.java:696)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:257)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:271)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseProductName(VendorDatabaseIdProvider.java:76)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseName(VendorDatabaseIdProvider.java:61)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseId(VendorDatabaseIdProvider.java:49)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:445)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1547)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:608)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.&lt;init&gt;(FileSystemXmlApplicationContext.java:140)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.&lt;init&gt;(FileSystemXmlApplicationContext.java:84)
+	at com.extr.service.PracticeServiceTest.addUserQuestionHistoryTest(PracticeServiceTest.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300)
+	... 68 more
+</system-out>
+  </testcase>
+  <testcase classname="com.extr.service.PracticeServiceTest" name="getUserQuestionHistoryTest" time="3.494">
+    <error message="nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/extr/persistence/QuestionMapper.xml
+### The error may involve com.extr.persistence.QuestionMapper.getUserQuestionHistoryByUserId
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server." type="org.mybatis.spring.MyBatisSystemException">org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/extr/persistence/QuestionMapper.xml
+### The error may involve com.extr.persistence.QuestionMapper.getUserQuestionHistoryByUserId
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:364)
+	at com.sun.proxy.$Proxy17.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:95)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:40)
+	at com.sun.proxy.$Proxy24.getUserQuestionHistoryByUserId(Unknown Source)
+	at com.extr.service.QuestionServiceImpl.getUserQuestionHistoryByUserId(QuestionServiceImpl.java:153)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:198)
+	at com.sun.proxy.$Proxy30.getUserQuestionHistoryByUserId(Unknown Source)
+	at com.extr.service.PracticeServiceTest.getUserQuestionHistoryTest(PracticeServiceTest.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/extr/persistence/QuestionMapper.xml
+### The error may involve com.extr.persistence.QuestionMapper.getUserQuestionHistoryByUserId
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:23)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:104)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:95)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:354)
+	... 43 more
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:66)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:279)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:69)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:56)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:267)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:141)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:105)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:81)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:101)
+	... 50 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:350)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2393)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2430)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2215)
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:813)
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:334)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:119)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:143)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:132)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.initializeAutomaticTestTable(C3P0PooledConnectionPoolManager.java:772)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.createPooledConnectionPool(C3P0PooledConnectionPoolManager.java:696)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:257)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:271)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 60 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300)
+	... 82 more
+</error>
+    <system-out>16:41:19,920 INFO  org.springframework.context.support.AbstractApplicationContext prepareRefresh:510 -&gt; Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@421bba99: startup date [Wed Mar 22 16:41:19 CST 2017]; root of context hierarchy
+16:41:19,953 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions:315 -&gt; Loading XML bean definitions from file [D:\BaiduYunDownload\毕设资料\Exam++网络考试\examxx\src\main\webapp\WEB-INF\spring\root-context.xml]
+16:41:20,020 INFO  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider registerDefaultFilters:230 -&gt; JSR-330 &apos;javax.inject.Named&apos; annotation found and supported for component scanning
+16:41:20,084 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor &lt;init&gt;:140 -&gt; JSR-330 &apos;javax.inject.Inject&apos; annotation found and supported for autowiring
+16:41:20,090 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons:596 -&gt; Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4ff4357f: defining beans [org.springframework.aop.config.internalAutoProxyCreator,org.springframework.cache.annotation.AnnotationCacheOperationSource#0,org.springframework.cache.interceptor.CacheInterceptor#0,org.springframework.cache.config.internalCacheAdvisor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,transactionManager,sqlSessionFactory,myInterceptor,org.mybatis.spring.mapper.MapperScannerConfigurer#0,multipartResolver,cacheManager,ehcacheFactory,Test,userDetailsServiceImpl,commentService,examService,practiceServiceImpl,questionService,userServiceImpl,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,commentMapper,examMapper,examPaperMapper,practiceMapper,questionMapper,userMapper]; root of factory hierarchy
+16:41:20,101 INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean afterPropertiesSet:110 -&gt; Initializing EhCache CacheManager
+16:41:21,175 INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager:462 -&gt; Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ java.beans.IntrospectionException: java.lang.reflect.InvocationTargetException [numThreadsAwaitingCheckoutDefaultUser] ]
+16:41:22,188 ERROR org.apache.ibatis.logging.slf4j.Slf4jImpl error:39 -&gt; Could not get a databaseId from dataSource
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:350)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2393)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2430)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2215)
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:813)
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:334)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:119)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:143)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:132)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.initializeAutomaticTestTable(C3P0PooledConnectionPoolManager.java:772)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.createPooledConnectionPool(C3P0PooledConnectionPoolManager.java:696)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:257)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:271)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseProductName(VendorDatabaseIdProvider.java:76)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseName(VendorDatabaseIdProvider.java:61)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseId(VendorDatabaseIdProvider.java:49)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:445)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1547)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:608)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.&lt;init&gt;(FileSystemXmlApplicationContext.java:140)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.&lt;init&gt;(FileSystemXmlApplicationContext.java:84)
+	at com.extr.service.PracticeServiceTest.getUserQuestionHistoryTest(PracticeServiceTest.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300)
+	... 68 more
+</system-out>
+  </testcase>
+  <testcase classname="com.extr.service.PracticeServiceTest" name="questionServiceTest" time="3.464">
+    <error message="nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/extr/persistence/QuestionMapper.xml
+### The error may involve com.extr.persistence.QuestionMapper.getQuestionList
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server." type="org.mybatis.spring.MyBatisSystemException">org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/extr/persistence/QuestionMapper.xml
+### The error may involve com.extr.persistence.QuestionMapper.getQuestionList
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:364)
+	at com.sun.proxy.$Proxy17.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:194)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:124)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:90)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:40)
+	at com.sun.proxy.$Proxy24.getQuestionList(Unknown Source)
+	at com.extr.service.QuestionServiceImpl.getQuestionList(QuestionServiceImpl.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:198)
+	at com.sun.proxy.$Proxy30.getQuestionList(Unknown Source)
+	at com.extr.service.PracticeServiceTest.questionServiceTest(PracticeServiceTest.java:171)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/extr/persistence/QuestionMapper.xml
+### The error may involve com.extr.persistence.QuestionMapper.getQuestionList
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:23)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:104)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:354)
+	... 44 more
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:66)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:279)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:69)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:56)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:267)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:141)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:105)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:81)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:101)
+	... 50 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:350)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2393)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2430)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2215)
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:813)
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:334)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:119)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:143)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:132)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.initializeAutomaticTestTable(C3P0PooledConnectionPoolManager.java:772)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.createPooledConnectionPool(C3P0PooledConnectionPoolManager.java:696)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:257)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:271)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 60 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300)
+	... 82 more
+</error>
+    <system-out>16:41:23,438 INFO  org.springframework.context.support.AbstractApplicationContext prepareRefresh:510 -&gt; Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@1d131e1b: startup date [Wed Mar 22 16:41:23 CST 2017]; root of context hierarchy
+16:41:23,440 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions:315 -&gt; Loading XML bean definitions from file [D:\BaiduYunDownload\毕设资料\Exam++网络考试\examxx\src\main\webapp\WEB-INF\spring\root-context.xml]
+16:41:23,505 INFO  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider registerDefaultFilters:230 -&gt; JSR-330 &apos;javax.inject.Named&apos; annotation found and supported for component scanning
+16:41:23,570 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor &lt;init&gt;:140 -&gt; JSR-330 &apos;javax.inject.Inject&apos; annotation found and supported for autowiring
+16:41:23,575 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons:596 -&gt; Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3b0c9195: defining beans [org.springframework.aop.config.internalAutoProxyCreator,org.springframework.cache.annotation.AnnotationCacheOperationSource#0,org.springframework.cache.interceptor.CacheInterceptor#0,org.springframework.cache.config.internalCacheAdvisor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,transactionManager,sqlSessionFactory,myInterceptor,org.mybatis.spring.mapper.MapperScannerConfigurer#0,multipartResolver,cacheManager,ehcacheFactory,Test,userDetailsServiceImpl,commentService,examService,practiceServiceImpl,questionService,userServiceImpl,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,commentMapper,examMapper,examPaperMapper,practiceMapper,questionMapper,userMapper]; root of factory hierarchy
+16:41:23,580 INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean afterPropertiesSet:110 -&gt; Initializing EhCache CacheManager
+16:41:24,653 INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager:462 -&gt; Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ java.beans.IntrospectionException: java.lang.reflect.InvocationTargetException [numThreadsAwaitingCheckoutDefaultUser] ]
+16:41:25,659 ERROR org.apache.ibatis.logging.slf4j.Slf4jImpl error:39 -&gt; Could not get a databaseId from dataSource
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:350)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2393)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2430)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2215)
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:813)
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:334)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:119)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:143)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:132)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.initializeAutomaticTestTable(C3P0PooledConnectionPoolManager.java:772)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.createPooledConnectionPool(C3P0PooledConnectionPoolManager.java:696)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:257)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:271)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseProductName(VendorDatabaseIdProvider.java:76)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseName(VendorDatabaseIdProvider.java:61)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseId(VendorDatabaseIdProvider.java:49)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:445)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1547)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:608)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.&lt;init&gt;(FileSystemXmlApplicationContext.java:140)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.&lt;init&gt;(FileSystemXmlApplicationContext.java:84)
+	at com.extr.service.PracticeServiceTest.questionServiceTest(PracticeServiceTest.java:163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300)
+	... 68 more
+</system-out>
+  </testcase>
+  <testcase classname="com.extr.service.PracticeServiceTest" name="paperCreateServiceTest" time="3.4">
+    <error message="nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/extr/persistence/QuestionMapper.xml
+### The error may involve com.extr.persistence.QuestionMapper.getQuestionListByPointId
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server." type="org.mybatis.spring.MyBatisSystemException">org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/extr/persistence/QuestionMapper.xml
+### The error may involve com.extr.persistence.QuestionMapper.getQuestionListByPointId
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:364)
+	at com.sun.proxy.$Proxy17.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:194)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:124)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:90)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:40)
+	at com.sun.proxy.$Proxy24.getQuestionListByPointId(Unknown Source)
+	at com.extr.service.QuestionServiceImpl.getQuestionStrutsMap(QuestionServiceImpl.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:198)
+	at com.sun.proxy.$Proxy30.getQuestionStrutsMap(Unknown Source)
+	at com.extr.service.PracticeServiceTest.paperCreateServiceTest(PracticeServiceTest.java:190)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/extr/persistence/QuestionMapper.xml
+### The error may involve com.extr.persistence.QuestionMapper.getQuestionListByPointId
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:23)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:104)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:354)
+	... 44 more
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:66)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:279)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:69)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:56)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:267)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:141)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:105)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:81)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:101)
+	... 50 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:350)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2393)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2430)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2215)
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:813)
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:334)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:119)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:143)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:132)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.initializeAutomaticTestTable(C3P0PooledConnectionPoolManager.java:772)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.createPooledConnectionPool(C3P0PooledConnectionPoolManager.java:696)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:257)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:271)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 60 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300)
+	... 82 more
+</error>
+    <system-out>16:41:26,911 INFO  org.springframework.context.support.AbstractApplicationContext prepareRefresh:510 -&gt; Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@7ce97ee5: startup date [Wed Mar 22 16:41:26 CST 2017]; root of context hierarchy
+16:41:26,913 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions:315 -&gt; Loading XML bean definitions from file [D:\BaiduYunDownload\毕设资料\Exam++网络考试\examxx\src\main\webapp\WEB-INF\spring\root-context.xml]
+16:41:26,976 INFO  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider registerDefaultFilters:230 -&gt; JSR-330 &apos;javax.inject.Named&apos; annotation found and supported for component scanning
+16:41:27,047 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor &lt;init&gt;:140 -&gt; JSR-330 &apos;javax.inject.Inject&apos; annotation found and supported for autowiring
+16:41:27,052 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons:596 -&gt; Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@b6b1987: defining beans [org.springframework.aop.config.internalAutoProxyCreator,org.springframework.cache.annotation.AnnotationCacheOperationSource#0,org.springframework.cache.interceptor.CacheInterceptor#0,org.springframework.cache.config.internalCacheAdvisor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,transactionManager,sqlSessionFactory,myInterceptor,org.mybatis.spring.mapper.MapperScannerConfigurer#0,multipartResolver,cacheManager,ehcacheFactory,Test,userDetailsServiceImpl,commentService,examService,practiceServiceImpl,questionService,userServiceImpl,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,commentMapper,examMapper,examPaperMapper,practiceMapper,questionMapper,userMapper]; root of factory hierarchy
+16:41:27,058 INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean afterPropertiesSet:110 -&gt; Initializing EhCache CacheManager
+16:41:28,134 INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager:462 -&gt; Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ java.beans.IntrospectionException: java.lang.reflect.InvocationTargetException [numThreadsAwaitingCheckoutDefaultUser] ]
+16:41:29,132 ERROR org.apache.ibatis.logging.slf4j.Slf4jImpl error:39 -&gt; Could not get a databaseId from dataSource
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:350)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2393)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2430)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2215)
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:813)
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:334)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:119)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:143)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:132)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.initializeAutomaticTestTable(C3P0PooledConnectionPoolManager.java:772)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.createPooledConnectionPool(C3P0PooledConnectionPoolManager.java:696)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:257)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:271)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseProductName(VendorDatabaseIdProvider.java:76)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseName(VendorDatabaseIdProvider.java:61)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseId(VendorDatabaseIdProvider.java:49)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:445)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1547)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:608)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.&lt;init&gt;(FileSystemXmlApplicationContext.java:140)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.&lt;init&gt;(FileSystemXmlApplicationContext.java:84)
+	at com.extr.service.PracticeServiceTest.paperCreateServiceTest(PracticeServiceTest.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300)
+	... 68 more
+</system-out>
+  </testcase>
+  <testcase classname="com.extr.service.PracticeServiceTest" name="getExecisePaper" time="2.34">
+    <error message="No bean named &apos;PracticeService&apos; is defined" type="org.springframework.beans.factory.NoSuchBeanDefinitionException">org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named &apos;PracticeService&apos; is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:568)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1102)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:278)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1117)
+	at com.extr.service.PracticeServiceTest.getExecisePaper(PracticeServiceTest.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>16:41:30,311 INFO  org.springframework.context.support.AbstractApplicationContext prepareRefresh:510 -&gt; Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@29df4d43: startup date [Wed Mar 22 16:41:30 CST 2017]; root of context hierarchy
+16:41:30,312 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions:315 -&gt; Loading XML bean definitions from file [D:\BaiduYunDownload\毕设资料\Exam++网络考试\examxx\src\main\webapp\WEB-INF\spring\root-context.xml]
+16:41:30,350 INFO  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider registerDefaultFilters:230 -&gt; JSR-330 &apos;javax.inject.Named&apos; annotation found and supported for component scanning
+16:41:30,401 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor &lt;init&gt;:140 -&gt; JSR-330 &apos;javax.inject.Inject&apos; annotation found and supported for autowiring
+16:41:30,413 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons:596 -&gt; Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@338494fa: defining beans [org.springframework.aop.config.internalAutoProxyCreator,org.springframework.cache.annotation.AnnotationCacheOperationSource#0,org.springframework.cache.interceptor.CacheInterceptor#0,org.springframework.cache.config.internalCacheAdvisor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,transactionManager,sqlSessionFactory,myInterceptor,org.mybatis.spring.mapper.MapperScannerConfigurer#0,multipartResolver,cacheManager,ehcacheFactory,Test,userDetailsServiceImpl,commentService,examService,practiceServiceImpl,questionService,userServiceImpl,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,commentMapper,examMapper,examPaperMapper,practiceMapper,questionMapper,userMapper]; root of factory hierarchy
+16:41:30,419 INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean afterPropertiesSet:110 -&gt; Initializing EhCache CacheManager
+16:41:31,511 INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager:462 -&gt; Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ java.beans.IntrospectionException: java.lang.reflect.InvocationTargetException [numThreadsAwaitingCheckoutDefaultUser] ]
+16:41:32,514 ERROR org.apache.ibatis.logging.slf4j.Slf4jImpl error:39 -&gt; Could not get a databaseId from dataSource
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:350)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2393)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2430)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2215)
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:813)
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:334)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:119)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:143)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:132)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.initializeAutomaticTestTable(C3P0PooledConnectionPoolManager.java:772)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.createPooledConnectionPool(C3P0PooledConnectionPoolManager.java:696)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:257)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:271)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseProductName(VendorDatabaseIdProvider.java:76)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseName(VendorDatabaseIdProvider.java:61)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseId(VendorDatabaseIdProvider.java:49)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:445)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1547)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:608)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.&lt;init&gt;(FileSystemXmlApplicationContext.java:140)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.&lt;init&gt;(FileSystemXmlApplicationContext.java:84)
+	at com.extr.service.PracticeServiceTest.getExecisePaper(PracticeServiceTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300)
+	... 67 more
+</system-out>
+  </testcase>
+  <testcase classname="com.extr.service.PracticeServiceTest" name="getQuestionMap" time="3.342">
+    <error message="nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/extr/persistence/QuestionMapper.xml
+### The error may involve com.extr.persistence.QuestionMapper.getQuestionListByPointId
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server." type="org.mybatis.spring.MyBatisSystemException">org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/extr/persistence/QuestionMapper.xml
+### The error may involve com.extr.persistence.QuestionMapper.getQuestionListByPointId
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:364)
+	at com.sun.proxy.$Proxy17.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:194)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:124)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:90)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:40)
+	at com.sun.proxy.$Proxy24.getQuestionListByPointId(Unknown Source)
+	at com.extr.service.QuestionServiceImpl.getQuestionStrutsMap(QuestionServiceImpl.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:198)
+	at com.sun.proxy.$Proxy30.getQuestionStrutsMap(Unknown Source)
+	at com.extr.service.PracticeServiceTest.getQuestionMap(PracticeServiceTest.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/extr/persistence/QuestionMapper.xml
+### The error may involve com.extr.persistence.QuestionMapper.getQuestionListByPointId
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:23)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:104)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:354)
+	... 44 more
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:66)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:279)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:69)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:56)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:267)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:141)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:105)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:81)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:101)
+	... 50 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:350)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2393)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2430)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2215)
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:813)
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:334)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:119)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:143)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:132)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.initializeAutomaticTestTable(C3P0PooledConnectionPoolManager.java:772)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.createPooledConnectionPool(C3P0PooledConnectionPoolManager.java:696)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:257)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:271)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 60 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300)
+	... 81 more
+</error>
+    <system-out>16:41:32,648 INFO  org.springframework.context.support.AbstractApplicationContext prepareRefresh:510 -&gt; Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@4fc5e095: startup date [Wed Mar 22 16:41:32 CST 2017]; root of context hierarchy
+16:41:32,650 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions:315 -&gt; Loading XML bean definitions from file [D:\BaiduYunDownload\毕设资料\Exam++网络考试\examxx\src\main\webapp\WEB-INF\spring\root-context.xml]
+16:41:32,687 INFO  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider registerDefaultFilters:230 -&gt; JSR-330 &apos;javax.inject.Named&apos; annotation found and supported for component scanning
+16:41:32,740 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor &lt;init&gt;:140 -&gt; JSR-330 &apos;javax.inject.Inject&apos; annotation found and supported for autowiring
+16:41:32,743 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons:596 -&gt; Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1eb6749b: defining beans [org.springframework.aop.config.internalAutoProxyCreator,org.springframework.cache.annotation.AnnotationCacheOperationSource#0,org.springframework.cache.interceptor.CacheInterceptor#0,org.springframework.cache.config.internalCacheAdvisor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,transactionManager,sqlSessionFactory,myInterceptor,org.mybatis.spring.mapper.MapperScannerConfigurer#0,multipartResolver,cacheManager,ehcacheFactory,Test,userDetailsServiceImpl,commentService,examService,practiceServiceImpl,questionService,userServiceImpl,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,commentMapper,examMapper,examPaperMapper,practiceMapper,questionMapper,userMapper]; root of factory hierarchy
+16:41:32,754 INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean afterPropertiesSet:110 -&gt; Initializing EhCache CacheManager
+16:41:33,851 INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager:462 -&gt; Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ java.beans.IntrospectionException: java.lang.reflect.InvocationTargetException [numThreadsAwaitingCheckoutDefaultUser] ]
+16:41:34,851 ERROR org.apache.ibatis.logging.slf4j.Slf4jImpl error:39 -&gt; Could not get a databaseId from dataSource
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:350)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2393)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2430)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2215)
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:813)
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:334)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:119)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:143)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:132)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.initializeAutomaticTestTable(C3P0PooledConnectionPoolManager.java:772)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.createPooledConnectionPool(C3P0PooledConnectionPoolManager.java:696)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:257)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:271)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseProductName(VendorDatabaseIdProvider.java:76)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseName(VendorDatabaseIdProvider.java:61)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseId(VendorDatabaseIdProvider.java:49)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:445)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1547)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:608)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.&lt;init&gt;(FileSystemXmlApplicationContext.java:140)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.&lt;init&gt;(FileSystemXmlApplicationContext.java:84)
+	at com.extr.service.PracticeServiceTest.getQuestionMap(PracticeServiceTest.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300)
+	... 67 more
+</system-out>
+  </testcase>
+  <testcase classname="com.extr.service.PracticeServiceTest" name="getQuestionList" time="2.254">
+    <error message="No bean named &apos;PracticeService&apos; is defined" type="org.springframework.beans.factory.NoSuchBeanDefinitionException">org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named &apos;PracticeService&apos; is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:568)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1102)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:278)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1117)
+	at com.extr.service.PracticeServiceTest.getQuestionList(PracticeServiceTest.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>16:41:36,011 INFO  org.springframework.context.support.AbstractApplicationContext prepareRefresh:510 -&gt; Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@61bcd567: startup date [Wed Mar 22 16:41:36 CST 2017]; root of context hierarchy
+16:41:36,012 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions:315 -&gt; Loading XML bean definitions from file [D:\BaiduYunDownload\毕设资料\Exam++网络考试\examxx\src\main\webapp\WEB-INF\spring\root-context.xml]
+16:41:36,076 INFO  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider registerDefaultFilters:230 -&gt; JSR-330 &apos;javax.inject.Named&apos; annotation found and supported for component scanning
+16:41:36,121 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor &lt;init&gt;:140 -&gt; JSR-330 &apos;javax.inject.Inject&apos; annotation found and supported for autowiring
+16:41:36,124 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons:596 -&gt; Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2c3dec30: defining beans [org.springframework.aop.config.internalAutoProxyCreator,org.springframework.cache.annotation.AnnotationCacheOperationSource#0,org.springframework.cache.interceptor.CacheInterceptor#0,org.springframework.cache.config.internalCacheAdvisor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,transactionManager,sqlSessionFactory,myInterceptor,org.mybatis.spring.mapper.MapperScannerConfigurer#0,multipartResolver,cacheManager,ehcacheFactory,Test,userDetailsServiceImpl,commentService,examService,practiceServiceImpl,questionService,userServiceImpl,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,commentMapper,examMapper,examPaperMapper,practiceMapper,questionMapper,userMapper]; root of factory hierarchy
+16:41:36,134 INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean afterPropertiesSet:110 -&gt; Initializing EhCache CacheManager
+16:41:37,234 INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager:462 -&gt; Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ java.beans.IntrospectionException: java.lang.reflect.InvocationTargetException [numThreadsAwaitingCheckoutDefaultUser] ]
+16:41:38,233 ERROR org.apache.ibatis.logging.slf4j.Slf4jImpl error:39 -&gt; Could not get a databaseId from dataSource
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:350)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2393)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2430)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2215)
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:813)
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:334)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:119)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:143)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:132)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.initializeAutomaticTestTable(C3P0PooledConnectionPoolManager.java:772)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.createPooledConnectionPool(C3P0PooledConnectionPoolManager.java:696)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:257)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:271)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseProductName(VendorDatabaseIdProvider.java:76)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseName(VendorDatabaseIdProvider.java:61)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseId(VendorDatabaseIdProvider.java:49)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:445)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1547)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:608)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.&lt;init&gt;(FileSystemXmlApplicationContext.java:140)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.&lt;init&gt;(FileSystemXmlApplicationContext.java:84)
+	at com.extr.service.PracticeServiceTest.getQuestionList(PracticeServiceTest.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300)
+	... 67 more
+</system-out>
+  </testcase>
+  <testcase classname="com.extr.service.PracticeServiceTest" name="paperTest" time="3.269">
+    <error message="nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/extr/persistence/QuestionMapper.xml
+### The error may involve com.extr.persistence.QuestionMapper.getQuestionListByPointId
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server." type="org.mybatis.spring.MyBatisSystemException">org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/extr/persistence/QuestionMapper.xml
+### The error may involve com.extr.persistence.QuestionMapper.getQuestionListByPointId
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:364)
+	at com.sun.proxy.$Proxy17.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:194)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:124)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:90)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:40)
+	at com.sun.proxy.$Proxy24.getQuestionListByPointId(Unknown Source)
+	at com.extr.service.QuestionServiceImpl.getQuestionStrutsMap(QuestionServiceImpl.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:198)
+	at com.sun.proxy.$Proxy30.getQuestionStrutsMap(Unknown Source)
+	at com.extr.service.PracticeServiceTest.paperTest(PracticeServiceTest.java:135)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/extr/persistence/QuestionMapper.xml
+### The error may involve com.extr.persistence.QuestionMapper.getQuestionListByPointId
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:23)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:104)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:354)
+	... 44 more
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:66)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:279)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:69)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:56)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:267)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:141)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:105)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:81)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:101)
+	... 50 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:350)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2393)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2430)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2215)
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:813)
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:334)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:119)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:143)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:132)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.initializeAutomaticTestTable(C3P0PooledConnectionPoolManager.java:772)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.createPooledConnectionPool(C3P0PooledConnectionPoolManager.java:696)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:257)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:271)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 60 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300)
+	... 81 more
+</error>
+    <system-out>16:41:38,313 INFO  org.springframework.context.support.AbstractApplicationContext prepareRefresh:510 -&gt; Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@3a94964: startup date [Wed Mar 22 16:41:38 CST 2017]; root of context hierarchy
+16:41:38,313 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions:315 -&gt; Loading XML bean definitions from file [D:\BaiduYunDownload\毕设资料\Exam++网络考试\examxx\src\main\webapp\WEB-INF\spring\root-context.xml]
+16:41:38,350 INFO  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider registerDefaultFilters:230 -&gt; JSR-330 &apos;javax.inject.Named&apos; annotation found and supported for component scanning
+16:41:38,419 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor &lt;init&gt;:140 -&gt; JSR-330 &apos;javax.inject.Inject&apos; annotation found and supported for autowiring
+16:41:38,423 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons:596 -&gt; Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@44c79f32: defining beans [org.springframework.aop.config.internalAutoProxyCreator,org.springframework.cache.annotation.AnnotationCacheOperationSource#0,org.springframework.cache.interceptor.CacheInterceptor#0,org.springframework.cache.config.internalCacheAdvisor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,transactionManager,sqlSessionFactory,myInterceptor,org.mybatis.spring.mapper.MapperScannerConfigurer#0,multipartResolver,cacheManager,ehcacheFactory,Test,userDetailsServiceImpl,commentService,examService,practiceServiceImpl,questionService,userServiceImpl,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,commentMapper,examMapper,examPaperMapper,practiceMapper,questionMapper,userMapper]; root of factory hierarchy
+16:41:38,430 INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean afterPropertiesSet:110 -&gt; Initializing EhCache CacheManager
+16:41:39,496 INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager:462 -&gt; Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ java.beans.IntrospectionException: java.lang.reflect.InvocationTargetException [numThreadsAwaitingCheckoutDefaultUser] ]
+16:41:40,501 ERROR org.apache.ibatis.logging.slf4j.Slf4jImpl error:39 -&gt; Could not get a databaseId from dataSource
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:350)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2393)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2430)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2215)
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:813)
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:334)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:119)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:143)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:132)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.initializeAutomaticTestTable(C3P0PooledConnectionPoolManager.java:772)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.createPooledConnectionPool(C3P0PooledConnectionPoolManager.java:696)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:257)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:271)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseProductName(VendorDatabaseIdProvider.java:76)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseName(VendorDatabaseIdProvider.java:61)
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseId(VendorDatabaseIdProvider.java:49)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:445)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1547)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:608)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.&lt;init&gt;(FileSystemXmlApplicationContext.java:140)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.&lt;init&gt;(FileSystemXmlApplicationContext.java:84)
+	at com.extr.service.PracticeServiceTest.paperTest(PracticeServiceTest.java:129)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at java.net.Socket.&lt;init&gt;(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300)
+	... 67 more
+</system-out>
+  </testcase>
+</testsuite>
