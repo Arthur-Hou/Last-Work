@@ -35,7 +35,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<div class="logo">
 							<h1><a href="#">网站管理系统</a></h1>
 							<div class="hmeta">
-								专注互联网在线考试解决方案
+							
 							</div>
 						</div>
 					</div>
@@ -75,7 +75,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							<a href="admin/exampaper-list"><i class="fa fa-file-text-o"></i>试卷管理</a>
 						</li>
 						<li class="active">
-							<a href="admin/user-list"><i class="fa fa-user"></i>会员管理</a>
+							<a href="admin/user-list"><i class="fa fa-user"></i>用户管理</a>
 						</li>
 						<li>
 							<a href="admin/field-list-1"><i class="fa fa-cloud"></i>题库管理</a>
@@ -101,16 +101,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<div class="col-xs-3">
 						<ul class="nav default-sidenav">
 							<li>
-								<a href="admin/user-list"> <i class="fa fa-list-ul"></i> 会员管理 </a>
+								<a href="admin/user-list"> <i class="fa fa-list-ul"></i> 用户管理 </a>
 							</li>
 							<li class="active">
-								<a> <i class="fa fa-list-ul"></i> 添加会员 </a>
+								<a> <i class="fa fa-list-ul"></i> 添加用户 </a>
 							</li>
 						</ul>
 					</div>
 					<div class="col-xs-9">
 						<div class="page-header">
-							<h1><i class="fa fa-list-ul"></i> 添加会员 </h1>
+							<h1><i class="fa fa-list-ul"></i> 添加用户 </h1>
 						</div>
 						<div class="page-content row">
 
@@ -178,12 +178,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 									<br>
 								</div>
 								<div class="form-line form-company" style="display: block;">
-									<span class="form-label"><span class="warning-label"></span>单位：</span>
+									<span class="form-label"><span class="warning-label"></span>学院：</span>
 										<input type="text" class="df-input-narrow" id="name"><span class="form-message"></span>
 									<br>
 								</div>
 								<div class="form-line form-department" style="display: block;">
-									<span class="form-label"><span class="warning-label"></span>部门：</span>
+									<span class="form-label"><span class="warning-label"></span>专业：</span>
 										<input type="text" class="df-input-narrow" id="name"><span class="form-message"></span>
 									<br>
 								</div>

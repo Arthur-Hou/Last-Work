@@ -39,7 +39,7 @@ String basePath = request.getScheme() + "://"
 							<h1><a href="#"><img alt="" src="resources/images/logo.png"></a></h1>
 						</div>
 					</div>
-					<div class="col-xs-7" id="login-info">
+					<%-- <div class="col-xs-7" id="login-info">
 						<c:choose>
 							<c:when test="${not empty sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}">
 								<div id="login-info-user">
@@ -54,7 +54,7 @@ String basePath = request.getScheme() + "://"
 								<a class="btn btn-success" href="user-login-page">登录</a>
 							</c:otherwise>
 						</c:choose>
-					</div>
+					</div> --%>
 				</div>
 			</div>
 		</header>
@@ -72,11 +72,32 @@ String basePath = request.getScheme() + "://"
 							<a href="start-exam"><i class="fa fa-edit"></i>试题练习</a>
 						</li>
 						<li>
-							<a href="student/usercenter"><i class="fa fa-dashboard"></i>会员中心</a>
+							<a href="student/usercenter"><i class="fa fa-dashboard"></i>用户中心</a>
 						</li>
 						<li>
 							<a href="student/setting"><i class="fa fa-cogs"></i>个人设置</a>
 						</li>
+						<li style="margin-left:200px;">
+						<!-- <div class="col-xs-7" id="login-info"> -->
+						<c:choose>
+							<c:when test="${not empty sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}">
+								 <!-- <div id="login-info-user">  -->
+									
+									<a href="user-detail/${sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}" id="system-info-account" target="_blank">${sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}</a>
+									<span>|</span> 
+									<a href="j_spring_security_logout"><i class="fa fa-sign-out" style="float:right;"></i> 退出</a>  
+								<!--  </div>  -->
+							</c:when>
+							<c:otherwise>
+								<a  href="user-register">用户注册</a> <!-- class="btn btn-primary" -->
+								
+								<li>
+								<a  href="user-login-page">登录</a> <!-- class="btn btn-success" -->
+								</li>
+							</c:otherwise>
+						</c:choose>
+					<!-- </div> -->
+					</li>
 					</ul>
 				</nav>
 			</div>
@@ -139,7 +160,7 @@ String basePath = request.getScheme() + "://"
 					<div class="col-md-12">
 						<div class="copy">
 							<p>
-								北方民族大学考试管理系统Copyright © <a href="#" target="_blank">北方民族大学考试管理系统</a> - <a href="." target="_blank">主页</a> | <a href="#" target="_blank">关于我们</a> | <a href="#" target="_blank">FAQ</a> | <a href="#" target="_blank">联系我们</a>
+								北方民族大学考试管理系统Copyright © <a href="#" target="_blank">HS</a> - <a href="." target="_blank">主页</a> | <a href="#" target="_blank">关于我们</a> | <a href="#" target="_blank">FAQ</a> | <a href="#" target="_blank">联系我们</a>
 							</p>
 						</div>
 					</div>

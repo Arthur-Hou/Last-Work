@@ -381,9 +381,9 @@ form label {
 	background-size: 100% auto;
 	/* opacity:0.7; */
 }
-/* header {
-	background: #fff;
-} */
+ header {
+	background: #1ba1e2;
+} 
 
 header .logo {
 	padding-bottom: 2px;

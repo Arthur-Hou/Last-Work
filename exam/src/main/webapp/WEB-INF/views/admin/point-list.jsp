@@ -36,7 +36,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<div class="logo">
 							<h1><a href="#">网站管理系统</a></h1>
 							<div class="hmeta">
-								专注互联网在线考试解决方案
+								
 							</div>
 						</div>
 					</div>
@@ -76,7 +76,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							<a href="admin/exampaper-list"><i class="fa fa-file-text-o"></i>试卷管理</a>
 						</li>
 						<li>
-							<a href="admin/user-list"><i class="fa fa-user"></i>会员管理</a>
+							<a href="admin/user-list"><i class="fa fa-user"></i>用户管理</a>
 						</li>
 						<li class="active">
 							<a><i class="fa fa-cloud"></i>题库管理</a>

@@ -43,7 +43,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<div class="logo">
 							<h1><a href="#">网站管理系统</a></h1>
 							<div class="hmeta">
-								专注互联网在线考试解决方案
+								
 							</div>
 						</div>
 					</div>
@@ -83,7 +83,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							<a href="admin/exampaper-list"><i class="fa fa-file-text-o"></i>试卷管理</a>
 						</li>
 						<li class="active">
-							<a href="admin/user-list"><i class="fa fa-user"></i>会员管理</a>
+							<a href="admin/user-list"><i class="fa fa-user"></i>用户管理</a>
 						</li>
 						<li>
 							<a href="admin/field-list-1"><i class="fa fa-cloud"></i>题库管理</a>
@@ -109,16 +109,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<div class="col-xs-3">
 						<ul class="nav default-sidenav">
 							<li class="active">
-								<a> <i class="fa fa-list-ul"></i> 会员管理 </a>
+								<a> <i class="fa fa-list-ul"></i> 用户管理 </a>
 							</li>
 							<li>
-								<a href="admin/add-user"> <i class="fa fa-list-ul"></i> 添加会员 </a>
+								<a href="admin/add-user"> <i class="fa fa-list-ul"></i> 添加用户 </a>
 							</li>
 						</ul>
 					</div>
 					<div class="col-xs-9">
 						<div class="page-header">
-							<h1><i class="fa fa-list-ul"></i> 会员管理 </h1>
+							<h1><i class="fa fa-list-ul"></i> 用户管理 </h1>
 						</div>
 						<div class="page-content row">
 
@@ -129,8 +129,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 										<tr>
 											<td></td><td>ID</td><td>用户名</td><td>邮箱</td>
 											<td>省份</td>
-											<td>单位</td>
-											<td>部门</td>
+											<td>学院</td>
+											<td>班级</td>
 											
 											<td>专业</td>
 											<!-- <td>用户组</td> -->
