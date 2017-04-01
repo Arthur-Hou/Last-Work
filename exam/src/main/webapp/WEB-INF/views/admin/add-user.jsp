@@ -116,7 +116,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 							<form id="user-add-form" style="margin-top:40px;"  action="admin/add-user">
 								<div class="form-line form-job-type" style="display: block;">
-									<span class="form-label"><span class="warning-label"></span>默认题库：</span>
+									<span class="form-label"><span class="warning-label"></span>选择专业：</span>
 									<select id="job-type-input-select" class="df-input-narrow">
 										<option value="-1">--请选择--</option>
 										<c:forEach items="${fieldList }" var="item">
@@ -127,7 +127,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 									<br>
 								</div>
 								<div class="form-line form-username" style="display: block;">
-									<span class="form-label"><span class="warning-label"></span>用户名：</span>
+									<span class="form-label"><span class="warning-label"></span>学号：</span>
 										<input type="text" class="df-input-narrow" id="name"><span class="form-message"></span>
 									<br>
 								</div>
@@ -183,7 +183,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 									<br>
 								</div>
 								<div class="form-line form-department" style="display: block;">
-									<span class="form-label"><span class="warning-label"></span>专业：</span>
+									<span class="form-label"><span class="warning-label"></span>班级：</span>
 										<input type="text" class="df-input-narrow" id="name"><span class="form-message"></span>
 									<br>
 								</div>
@@ -307,8 +307,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				if (username == "") {
 					$(".form-username .form-message").text("用户名不能为空");
 					return false;
-				} else if (username.length > 20 || username.length < 5) {
-					$(".form-username .form-message").text("请保持在5-20个字符以内");
+				} else if (username.length > 20 || username.length < 2) {
+					$(".form-username .form-message").text("请保持在2-20个字符以内");
 					return false;
 				} else {
 					var re=/[\+|\-|\\|\/||&|!|~|@|#|\$|%|\^|\*|\(|\)|=|\?|´|"|<|>|\.|,|:|;|\]|\[|\{|\}|\|]+/;

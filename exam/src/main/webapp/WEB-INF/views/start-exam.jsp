@@ -126,7 +126,10 @@ String basePath = request.getScheme() + "://"
 						<li>
 							<a href="student/setting"><i class="fa fa-cogs"></i>个人设置</a>
 						</li>
-						<li style="margin-left:200px;">
+						<li>
+							<a href="examinfo"><i class="fa fa-dashboard"></i>考试信息</a>
+						</li>
+						<li style="margin-left:100px;">
 						<!-- <div class="col-xs-7" id="login-info"> -->
 						<c:choose>
 							<c:when test="${not empty sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}">
@@ -134,7 +137,7 @@ String basePath = request.getScheme() + "://"
 									
 									<a href="user-detail/${sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}" id="system-info-account" target="_blank">${sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}</a>
 									<!-- <span>|</span> -->
-									<a href="j_spring_security_logout"><i ></i> 退出</a> <!-- class="fa fa-sign-out" -->
+									<li><a href="j_spring_security_logout"><i ></i> 退出</a> <!-- class="fa fa-sign-out" --><li>
 								<!-- </div> -->
 							</c:when>
 							<c:otherwise>
@@ -311,84 +314,7 @@ String basePath = request.getScheme() + "://"
 								<!--//content-->
 							</div>
 						</div>
-						<div class="select-test col-xs-6">
-							<div style="height: 100px;">
-								<div class="select-test-icon">
-									<i class="fa fa-book"></i>
-								</div>
-								<div class="select-test-content">
-									<h3 class="title">随机组卷</h3>
-									<p>
-										随机组成试卷参加考试
-									</p>
-									<a class="btn btn-primary" data-toggle="modal" data-target=".history-exampaper-modal" disabled="disabled"><i class="fa fa-arrow-right"></i>即将开放</a>
-									<div class="modal fade history-exampaper-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-									  <div class="modal-dialog">
-									    <div class="modal-content">
-									    	<div class="modal-header">
-										        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-										        <h6 class="modal-title" id="myModalLabel">选择试卷，参加考试</h6>
-										     </div>
-										     <div class="modal-body">
-										     	<ul>
-										     		<c:forEach items="${historypaper}" var="item">
-										     			<li>
-										     				<a href="student/examing/${item.id}">${item.name}</a>
-										     			</li>
-										     		</c:forEach>
-										     	</ul>
-										     </div>
-										     <div class="modal-footer">
-        										<button type="button" class="btn btn-default" data-dismiss="modal">关闭窗口</button>
-      										 </div>
-									    	
-									    </div>
-									  </div>
-									</div>
-								</div>
-								<!--//content-->
-
-							</div>
-						</div>
-						<div class="select-test col-xs-6">
-							<div style="height: 100px;">
-								<div class="select-test-icon">
-									<i class="fa fa-rocket"></i>
-								</div>
-								<div class="select-test-content">
-									<h3 class="title">专家试卷</h3>
-									<p>
-										专家组卷，为你提供更权威的考题动向
-									</p>
-									<a class="btn btn-primary" data-toggle="modal" data-target=".expert-exampaper-modal" disabled="disabled"><i class="fa fa-arrow-right"></i>即将开放</a>
-									<div class="modal fade expert-exampaper-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-									  <div class="modal-dialog">
-									    <div class="modal-content">
-									    	<div class="modal-header">
-										        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-										        <h6 class="modal-title" id="myModalLabel">选择试卷，参加考试</h6>
-										     </div>
-										     <div class="modal-body">
-										     	<ul>
-										     		<c:forEach items="${expertpaper}" var="item">
-										     			<li>
-										     				<a href="student/examing/${item.id}">${item.name}</a>
-										     			</li>
-										     		</c:forEach>
-										     	</ul>
-										     </div>
-										     <div class="modal-footer">
-        										<button type="button" class="btn btn-default" data-dismiss="modal">关闭窗口</button>
-      										 </div>
-									    	
-									    </div>
-									  </div>
-									</div>
-								</div>
-								<!--//content-->
-
-							</div>
-						</div>
+						
 
 					</div>
 

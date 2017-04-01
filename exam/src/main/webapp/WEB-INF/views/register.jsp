@@ -50,22 +50,7 @@ String basePath = request.getScheme() + "://"
 							<h1><a href="#"><img alt="" src="resources/images/logo.png"></a></h1>
 						</div>
 					</div>
-					<%-- <div class="col-xs-7" id="login-info">
-						<c:choose>
-							<c:when test="${not empty sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}">
-								<div id="login-info-user">
-									
-									<a href="user-detail/${sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}" id="system-info-account" target="_blank">${sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}</a>
-									<span>|</span>
-									<a href="j_spring_security_logout"><i class="fa fa-sign-out"></i> 退出</a>
-								</div>
-							</c:when>
-							<c:otherwise>
-								<a class="btn btn-primary" href="user-register">用户注册</a>
-								<a class="btn btn-success" href="user-login-page">登录</a>
-							</c:otherwise>
-						</c:choose>
-					</div> --%>
+					
 				</div>
 			</div>
 		</header>
@@ -88,7 +73,10 @@ String basePath = request.getScheme() + "://"
 						<li>
 							<a href="student/setting"><i class="fa fa-cogs"></i>个人设置</a>
 						</li>
-						<li style="margin-left:200px;">
+						<li>
+							<a href="examinfo"><i class="fa fa-dashboard"></i>考试信息</a>
+						</li>
+						<li style="margin-left:100px;">
 						<!-- <div class="col-xs-7" id="login-info"> -->
 						<c:choose>
 							<c:when test="${not empty sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}">
@@ -96,7 +84,7 @@ String basePath = request.getScheme() + "://"
 									
 									<a href="user-detail/${sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}" id="system-info-account" target="_blank">${sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}</a>
 									<!-- <span>|</span> -->
-									<a href="j_spring_security_logout"><i ></i> 退出</a> <!-- class="fa fa-sign-out" -->
+									<li><a href="j_spring_security_logout"><i ></i> 退出</a> <!-- class="fa fa-sign-out" --></li>
 								<!-- </div> -->
 							</c:when>
 							<c:otherwise>
@@ -131,7 +119,7 @@ String basePath = request.getScheme() + "://"
 								action="user-reg">
 									<!-- Name -->
 									<div class="form-group form-username">
-										<label class="control-label col-md-3" for="name">账号</label>
+										<label class="control-label col-md-3" for="name">学号</label>
 										<div class="col-md-9">
 											<input type="text" class="form-control" id="name">
 											<span class="form-message"></span>
@@ -140,7 +128,7 @@ String basePath = request.getScheme() + "://"
 									</div>
 									<!-- Email -->
 									<div class="form-group form-email">
-										<label class="control-label col-md-3" for="email">email</label>
+										<label class="control-label col-md-3" for="email">姓名</label>
 										<div class="col-md-9">
 											<input type="text" class="form-control" id="email">
 											<span class="form-message"></span>
@@ -221,7 +209,7 @@ String basePath = request.getScheme() + "://"
 					<div class="col-md-12">
 						<div class="copy">
 							<p>
-								E北方民族大学考试管理系统 Copyright © <a href="#" target="_blank">HS</a> - <a href="." target="_blank">主页</a> | <a href="#" target="_blank">关于我们</a> | <a href="#" target="_blank">FAQ</a> | <a href="#" target="_blank">联系我们</a>
+								北方民族大学考试管理系统 Copyright © <a href="#" target="_blank">HS</a> - <a href="." target="_blank">主页</a> | <a href="#" target="_blank">关于我们</a> | <a href="#" target="_blank">FAQ</a> | <a href="#" target="_blank">联系我们</a>
 							</p>
 						</div>
 					</div>

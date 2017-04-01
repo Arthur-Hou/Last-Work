@@ -80,8 +80,8 @@ var create_account = {
 		if (username == "") {
 			$(".form-username .form-message").text("用户名不能为空");
 			return false;
-		} else if (username.length > 20 || username.length < 5) {
-			$(".form-username .form-message").text("请保持在5-20个字符以内");
+		} else if (username.length > 20 || username.length < 2) {
+			$(".form-username .form-message").text("请保持在2-20个字符以内");
 			return false;
 		} else {
 			var re=/[\+|\-|\\|\/||&|!|~|@|#|\$|%|\^|\*|\(|\)|=|\?|´|"|<|>|\.|,|:|;|\]|\[|\{|\}|\|]+/;
@@ -96,24 +96,42 @@ var create_account = {
 	},
 
 	checkEmail : function checkEmail() {
-		var email = $(".form-email input").val();
+		/*var email = $(".form-username input").val();
 		if (email == "") {
-			$(".form-email .form-message").text("邮箱不能为空");
+			$(".form-username .form-message").text("邮箱不能为空");
 			return false;
-		} else if (email.length > 40 || email.length < 5) {
-			$(".form-email .form-message").text("请保持在5-40个字符以内");
+		} else if (email.length > 40 || email.length < 2) {
+			$(".form-username .form-message").text("请保持在2-20个字符以内");
 			return false;
 		} else {
-			var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			var re = /[\+|\-|\\|\/||&|!|~|@|#|\$|%|\^|\*|\(|\)|=|\?|´|"|<|>|\.|,|:|;|\]|\[|\{|\}|\|]+/;
+				// /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		   if(re.test(email)){
 			   return true;
 		   }else{
-			   $(".form-email .form-message").text("无效的邮箱");
+			   $(".form-username .form-message").text("无效的姓名");
 				return false;
 		   }
 			
 		}
-		return true;
+		return true;*/
+			var username = $(".form-username input").val();
+			if (username == "") {
+				$(".form-username .form-message").text("用户名不能为空");
+				return false;
+			} else if (username.length > 20 || username.length < 2) {
+				$(".form-username .form-message").text("请保持在2-20个字符以内");
+				return false;
+			} else {
+				var re=/[\+|\-|\\|\/||&|!|~|@|#|\$|%|\^|\*|\(|\)|=|\?|´|"|<|>|\.|,|:|;|\]|\[|\{|\}|\|]+/;
+				if(re.test(username)){
+					$(".form-username .form-message").text("只能是数字字母或者下划线的组合");
+					return false;
+				}else return true; 
+				
+				
+			}
+			return true;
 	},
 
 	checkPassword : function checkPassword() {

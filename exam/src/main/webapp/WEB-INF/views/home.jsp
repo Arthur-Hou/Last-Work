@@ -92,22 +92,7 @@ String basePath = request.getScheme() + "://"
 							<h1><a href="#"><img alt="" src="resources/images/logo.png" height="80px" width="268px"></a></h1>
 						</div>
 					</div>
-					<%-- <div class="col-xs-7" id="login-info">
-						<c:choose>
-							<c:when test="${not empty sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}">
-								<div id="login-info-user">
-									
-									<a href="user-detail/${sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}" id="system-info-account" target="_blank">${sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}</a>
-									<span>|</span>
-									<a href="j_spring_security_logout"><i class="fa fa-sign-out"></i> 退出</a>
-								</div>
-							</c:when>
-							<c:otherwise>
-								<a class="btn btn-primary" href="user-register">用户注册</a>
-								<a class="btn btn-success" href="user-login-page">登录</a>
-							</c:otherwise>
-						</c:choose>
-					</div> --%>
+					
 				</div>
 			</div>
 		</header>
@@ -129,7 +114,10 @@ String basePath = request.getScheme() + "://"
 						<li>
 							<a href="student/setting"><i class="fa fa-cogs"></i>个人设置</a>
 						</li>
-						<li style="margin-left:200px;">
+						<li>
+							<a href="examinfo"><i class="fa fa-dashboard"></i>考试信息</a>
+						</li>
+						<li style="margin-left:100px;">
 						<!-- <div class="col-xs-7" id="login-info"> -->
 						<c:choose>
 							<c:when test="${not empty sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}">
@@ -137,7 +125,7 @@ String basePath = request.getScheme() + "://"
 									
 									<a href="user-detail/${sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}" id="system-info-account" target="_blank">${sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}</a>
 									<!-- <span>|</span> -->
-									<a href="j_spring_security_logout"><i ></i> 退出</a> <!-- class="fa fa-sign-out" -->
+									<li><a href="j_spring_security_logout"><i ></i> 退出</a> <!-- class="fa fa-sign-out" --></li>
 								<!-- </div> -->
 							</c:when>
 							<c:otherwise>
@@ -207,6 +195,104 @@ String basePath = request.getScheme() + "://"
 									<i class="fa fa-cloud-upload"></i>
 								</div>
 								<div class="select-test-content">
+									<h3 class="title">随机练习</h3>
+									<p>
+
+										根据你对考点的掌握程度智能出题，提升综合能力
+									</p>
+									<a class="btn btn-primary" href="student/practice-test"><i class="fa fa-arrow-right"></i>参加练习</a>
+								</div>
+								<%-- <div class="select-test-content">
+									<h3 class="title">强化练习</h3>
+									<p>
+										自主选择具体考点，各个击破
+									</p>
+									<a class="btn btn-primary" data-toggle="modal" data-target=".levelup-practice-modal"><i class="fa fa-arrow-right"></i>参加练习</a>
+									<div class="modal fade levelup-practice-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+									  <div class="modal-dialog">
+									    <div class="modal-content">
+									    	<div class="modal-header">
+										        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										        <h6 class="modal-title" id="myModalLabel">选择想要练习的知识点</h6>
+										     </div>
+										     <div class="modal-body">
+										     	<ul>
+										     		<c:forEach items="${classifyMap}" var="item">
+										     			<li>
+										     				<div class="knowledge-title">
+										     					<i class="fa fa-chevron-up"> </i><i class="fa fa-chevron-down" style="display:none;"> </i>  <span class="knowledge-title-name">${item.key}</span>
+										     				</div>
+										     				
+										     				<ul class="question-list-knowledge" style="display:none;">
+										     					<c:forEach items="${item.value }" var="tp">
+										     						<li>${tp.questionTypeName } [共<span class="question-number">${tp.amount } </span>题]
+										     							[已做<span class="question-number-2">${tp.rightTimes + tp.wrongTimes } </span> 题]
+										     							<a href="student/practice-improve/${tp.questionPointId }/${tp.questionTypeId }" class="btn btn-success btn-sm join-practice-btn">参加练习</a>
+										     						</li>
+										     					</c:forEach>
+										     				</ul>
+										     			</li>
+										     		</c:forEach>
+										     	</ul>
+										     </div>
+										     <div class="modal-footer">
+        										<button type="button" class="btn btn-default" data-dismiss="modal">关闭窗口</button>
+      										 </div>
+									    </div>
+									  </div>
+									</div>
+								</div> --%>
+								<!--//content-->
+
+							</div>
+						</div>
+						<div class="select-test col-xs-6">
+							<div style="height: 100px;">
+								<div class="select-test-icon">
+									<i class="fa fa-eraser"></i>
+								</div>
+								<div class="select-test-content">
+									<h3 class="title">考试查询</h3>
+									<p>
+										考试信息记录
+									</p>
+									<!-- <a class="btn btn-primary" href="student/practice-incorrect"><i class="fa fa-arrow-right"></i>参加练习</a> -->
+									<a class="btn btn-primary" data-toggle="modal" data-target=".incorrect-modal"><i class="fa fa-arrow-right"></i>考试信息</a>
+									<div class="modal fade incorrect-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+									  <div class="modal-dialog">
+									    <div class="modal-content">
+									    	<div class="modal-header">
+										        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										        <h6 class="modal-title" id="myModalLabel">查看信息</h6>
+										     </div>
+										     <div class="modal-body">
+										     	<ul>
+										     		<c:forEach items="${wrongKnowledgeMap }" var="item" >
+										     			<li><span class="point-name"> ${item.key }</span> [共<span class="question-number-3"><c:forEach items="${item.value }" var="v">${v.value }</c:forEach> </span>题]
+							 			     							<a href="student/practice-incorrect/<c:forEach items="${item.value }" var="k">${k.key }</c:forEach>" class="btn btn-success btn-sm join-practice-btn">参加练习</a>
+										     			</li>
+										     		</c:forEach>
+										     		
+										     	</ul>
+										     </div>
+										     <div class="modal-footer">
+        										<button type="button" class="btn btn-default" data-dismiss="modal">关闭窗口</button>
+      										 </div>
+									    	
+									    </div>
+									  </div>
+									</div>
+								</div>
+								<!--//content-->
+
+							</div>
+						</div>
+						<div class="select-test col-xs-6">
+							<div style="height: 100px;">
+								<div class="select-test-icon">
+									<i class="fa fa-superscript"></i>
+								</div>
+								<div class="select-test-content">
 									<h3 class="title">强化练习</h3>
 									<p>
 										自主选择具体考点，各个击破
@@ -246,64 +332,14 @@ String basePath = request.getScheme() + "://"
 									  </div>
 									</div>
 								</div>
-								<!--//content-->
-
-							</div>
-						</div>
-						<div class="select-test col-xs-6">
-							<div style="height: 100px;">
-								<div class="select-test-icon">
-									<i class="fa fa-eraser"></i>
-								</div>
-								<div class="select-test-content">
-									<h3 class="title">错题练习</h3>
-									<p>
-										收录做过的所有错题
-									</p>
-									<!-- <a class="btn btn-primary" href="student/practice-incorrect"><i class="fa fa-arrow-right"></i>参加练习</a> -->
-									<a class="btn btn-primary" data-toggle="modal" data-target=".incorrect-modal"><i class="fa fa-arrow-right"></i>参加练习</a>
-									<div class="modal fade incorrect-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-									  <div class="modal-dialog">
-									    <div class="modal-content">
-									    	<div class="modal-header">
-										        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-										        <h6 class="modal-title" id="myModalLabel">错题练习</h6>
-										     </div>
-										     <div class="modal-body">
-										     	<ul>
-										     		<c:forEach items="${wrongKnowledgeMap }" var="item" >
-										     			<li><span class="point-name"> ${item.key }</span> [共<span class="question-number-3"><c:forEach items="${item.value }" var="v">${v.value }</c:forEach> </span>题]
-							 			     							<a href="student/practice-incorrect/<c:forEach items="${item.value }" var="k">${k.key }</c:forEach>" class="btn btn-success btn-sm join-practice-btn">参加练习</a>
-										     			</li>
-										     		</c:forEach>
-										     		
-										     	</ul>
-										     </div>
-										     <div class="modal-footer">
-        										<button type="button" class="btn btn-default" data-dismiss="modal">关闭窗口</button>
-      										 </div>
-									    	
-									    </div>
-									  </div>
-									</div>
-								</div>
-								<!--//content-->
-
-							</div>
-						</div>
-						<div class="select-test col-xs-6">
-							<div style="height: 100px;">
-								<div class="select-test-icon">
-									<i class="fa fa-superscript"></i>
-								</div>
-								<div class="select-test-content">
+								<!-- <div class="select-test-content">
 									<h3 class="title">随机练习</h3>
 									<p>
 
 										根据你对考点的掌握程度智能出题，提升综合能力
 									</p>
 									<a class="btn btn-primary" href="student/practice-test"><i class="fa fa-arrow-right"></i>参加练习</a>
-								</div>
+								</div> -->
 								<!--//content-->
 
 							</div>
@@ -346,7 +382,7 @@ String basePath = request.getScheme() + "://"
 								<!--//content-->
 							</div>
 						</div>
-						<div class="select-test col-xs-6">
+						<%-- <div class="select-test col-xs-6">
 							<div style="height: 100px;">
 								<div class="select-test-icon">
 									<i class="fa fa-book"></i>
@@ -423,7 +459,7 @@ String basePath = request.getScheme() + "://"
 								<!--//content-->
 
 							</div>
-						</div>
+						</div> --%>
 
 					</div>
 

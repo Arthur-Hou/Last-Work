@@ -121,10 +121,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							<a href="start-exam"><i class="fa fa-edit"></i>试题练习</a>
 						</li>
 						<li class="active">
-							<a href="student/usercenter"><i class="fa fa-dashboard"></i>会员中心</a>
+							<a href="student/usercenter"><i class="fa fa-dashboard"></i>用户中心</a>
 						</li>
 						<li>
 							<a href="student/setting"><i class="fa fa-cogs"></i>个人设置</a>
+						</li>
+						<li>
+							<a href="examinfo"><i class="fa fa-dashboard"></i>考试信息</a>
 						</li>
 					</ul>
 				</nav>
@@ -162,11 +165,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							<div class="col-xs-4">
 								<h6>个人信息</h6>
 								<div>
-									<span >姓名：</span>
+									<span >学号：</span>
 									<span> ${username }</span>
 								</div>
 								<div>
-									<span >邮箱：</span>
+									<span >姓名：</span>
 									<span> ${email } </span>
 								</div>
 								<div>
@@ -190,7 +193,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								<div class="page-content row">
 									<div class="col-xs-8">
 										<canvas id="canvas" height="450" width="450"></canvas>
-										<p>此统计数据不包括简答、论述、分析等主观题</p>
+										<!-- <p>此统计数据不包括简答、论述、分析等主观题</p> -->
 									</div>
 									<div class="col-xs-4" id="radar-legend">
 									</div>

@@ -72,7 +72,10 @@ String basePath = request.getScheme() + "://"
 						<li>
 							<a href="student/setting"><i class="fa fa-cogs"></i>个人设置</a>
 						</li>
-						<li style="margin-left:200px;">
+						<li>
+							<a href="examinfo"><i class="fa fa-dashboard"></i>考试信息</a>
+						</li>
+						<li style="margin-left:100px;">
 						<!-- <div class="col-xs-7" id="login-info"> -->
 						<c:choose>
 							<c:when test="${not empty sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}">

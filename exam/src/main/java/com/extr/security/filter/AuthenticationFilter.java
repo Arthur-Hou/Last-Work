@@ -121,6 +121,6 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 	protected String obtainUsername(HttpServletRequest request) {
 		// TODO Auto-generated method stub
 		Object obj = request.getParameter(USERNAME);
-		return null == obj ? "" : obj.toString().trim().toLowerCase();
+		return null == obj ? "" : obj.toString().trim();
 	}
 }

@@ -1,6 +1,8 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme() + "://"
@@ -12,16 +14,26 @@ String basePath = request.getScheme() + "://"
 <html>
 	<head>
 		<base href="<%=basePath%>">
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+		<meta http-equiv="description" content="This is my page">
 		<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>北方民族大学考试管理登录系统</title>
-		
+		<!--
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		-->
+		<title>北方民族大学考试管理系统</title>
+		<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="keywords" content="">
 		<link rel="shortcut icon" href="<%=basePath%>resources/images/favicon.ico" />
 		<link href="resources/bootstrap/css/bootstrap-huan.css" rel="stylesheet">
-		<link href="resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="resources/font-awesome/css/font-awesome.min.css"
+		rel="stylesheet">
 		<link href="resources/css/style.css" rel="stylesheet">
+		<!-- Javascript files -->
 		<style type="text/css">
 			.form-group {
 				margin-bottom: 5px;
@@ -30,8 +42,10 @@ String basePath = request.getScheme() + "://"
 
 		</style>
 	</head>
-	<body>
-		<header>
+
+<body>
+
+<header>
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-5">
@@ -69,12 +83,12 @@ String basePath = request.getScheme() + "://"
 						<!-- <div class="col-xs-7" id="login-info"> -->
 						<c:choose>
 							<c:when test="${not empty sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}">
-								 <!-- <div id="login-info-user">  -->
+								<!-- <div id="login-info-user"> -->
 									
 									<a href="user-detail/${sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}" id="system-info-account" target="_blank">${sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}</a>
-									<span>|</span> 
-									<a href="j_spring_security_logout"><i class="fa fa-sign-out" style="float:right;"></i> 退出</a>  
-								<!--  </div>  -->
+									<!-- <span>|</span> -->
+									<li><a href="j_spring_security_logout"><i ></i> 退出</a> <!-- class="fa fa-sign-out" --></li>
+								<!-- </div> -->
 							</c:when>
 							<c:otherwise>
 								<a  href="user-register">用户注册</a> <!-- class="btn btn-primary" -->
@@ -93,80 +107,5 @@ String basePath = request.getScheme() + "://"
 
 		<!-- Navigation bar ends -->
 
-		<div class="content" style="margin-bottom: 100px;">
-
-			<div class="container">
-				<div class="row">
-
-					<div class="col-md-12">
-						<div class="lrform">
-							<h5>登陆北方民族大学考试管理系统</h5>
-							<div class="form">
-								<!-- Login form (not working)-->
-								<form class="form-horizontal" action="j_spring_security_check" method="post">
-									<!-- Username -->
-									<div class="form-group">
-										<label class="control-label col-md-3" for="username">学号</label>
-										<div class="col-md-9">
-											<input type="text" class="form-control" name="j_username">
-										</div>
-									</div>
-									<!-- Password -->
-									<div class="form-group">
-										<label class="control-label col-md-3" for="password">密码</label>
-										<div class="col-md-9">
-											<input type="password" class="form-control" name="j_password">
-										</div>
-									</div>
-									<!-- Buttons -->
-									<div class="form-group">
-										<!-- Buttons -->
-										<div class="col-md-9 col-md-offset-3">
-											<button type="submit" class="btn btn-default">
-												登陆
-											</button>
-											<button type="reset" class="btn btn-default">
-												取消
-											</button>
-											<span class="form-message">${result}</span>
-										</div>
-									</div>
-								</form>
-								没有账号? <a href="user-register">注册</a>
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-			</div>
-
-		</div>
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="copy">
-							<p>
-								北方民族大学考试管理系统Copyright © <a href="#" target="_blank">HS</a> - <a href="." target="_blank">主页</a> | <a href="#" target="_blank">关于我们</a> | <a href="#" target="_blank">FAQ</a> | <a href="#" target="_blank">联系我们</a>
-							</p>
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-		</footer>
-
-		<!-- Slider Ends -->
-
-		<!-- Javascript files -->
-		<!-- jQuery -->
-		<script type="text/javascript"
-		src="resources/js/jquery/jquery-1.9.0.min.js"></script>
-		<!-- Bootstrap JS -->
-		<script type="text/javascript"
-		src="resources/bootstrap/js/bootstrap.min.js"></script>
-
-	</body>
+</body>
 </html>

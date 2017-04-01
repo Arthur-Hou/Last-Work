@@ -69,10 +69,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							<a href="start-exam"><i class="fa fa-edit"></i>试题练习</a>
 						</li>
 						<li>
-							<a href="student/usercenter"><i class="fa fa-dashboard"></i>会员中心</a>
+							<a href="student/usercenter"><i class="fa fa-dashboard"></i>用户中心</a>
 						</li>
 						<li class="active">
 							<a href="student/setting"><i class="fa fa-cogs"></i>个人设置</a>
+						</li>
+						<li>
+							<a href="examinfo"><i class="fa fa-dashboard"></i>考试信息</a>
 						</li>
 					</ul>
 				</nav>
@@ -110,7 +113,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 									
 									<!-- password -->
 									<div class="form-group form-username">
-										<label class="control-label col-md-2" for="username">账号</label>
+										<label class="control-label col-md-2" for="username">学号</label>
 										<div class="col-md-5">
 											<input type="text" class="form-control" id="username" disabled="disabled" value="${user.username }">
 											<span class="form-message"></span>
@@ -124,19 +127,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 											<select class="form-control" id="job-type-input">
 												<option value="-1">--请选择--</option>
 												<c:if test="${user.fieldId eq 2 }">
-													<option value="2" selected="selected">窗口服务</option>
-													<option value="3">业报扩装</option>
-													<option value="4">电能计量</option>
+													<option value="2" selected="selected">软件工程</option>
+													<option value="3">计算机工程</option>
+													<option value="4">网络工程</option>
+													<option value="5">信息管理</option>
 												</c:if>
 												<c:if test="${user.fieldId eq 3 }">
-													<option value="2">窗口服务</option>
-													<option value="3" selected="selected">业报扩装</option>
-													<option value="4">电能计量</option>
+													<option value="2">软件工程</option>
+													<option value="3" selected="selected">计算机工程</option>
+													<option value="4">网络工程</option>
+													<option value="5">信息管理</option>
 												</c:if>
 												<c:if test="${user.fieldId eq 4 }">
-													<option value="2">窗口服务</option>
-													<option value="3">业报扩装</option>
-													<option value="4" selected="selected">电能计量</option>
+													<option value="2">软件工程</option>
+													<option value="3">计算机工程</option>
+													<option value="4" selected="selected">网络工程</option>
+													<option value="5">信息管理</option>
 												</c:if>
 											</select>
 											<span class="form-message"></span>
@@ -153,7 +159,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 									</div>
 									
 									<div class="form-group form-email">
-										<label class="control-label col-md-2" for="email">email</label>
+										<label class="control-label col-md-2" for="email">姓名</label>
 										<div class="col-md-5">
 											<input type="text" class="form-control" id="email" value="${user.email }">
 											<span class="form-message"></span>
