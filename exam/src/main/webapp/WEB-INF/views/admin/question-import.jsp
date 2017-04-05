@@ -81,6 +81,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<li>
 							<a href="admin/sys-backup"><i class="fa fa-cogs"></i>网站设置</a>
 						</li>
+						<li>
+							<a href="examinfo"><i class="fa fa-dashboard"></i>考试信息</a>
+						</li>
 					</ul>
 				</nav>
 			</div>

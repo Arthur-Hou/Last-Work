@@ -106,6 +106,17 @@ public class UserController {
 		model.addAttribute("fieldList", fieldList);
 		return "register";
 	}
+	/**
+	 * 考试信息
+	 * 
+	 * @return
+	 */
+	@RequestMapping(value = { "/examinfo" }, method = RequestMethod.GET)
+	public String examinfo(Model model) {
+		List<Field> fieldList = questionService.getAllField(null);
+		model.addAttribute("fieldList", fieldList);
+		return "examinfo";
+	}
 
 	/**
 	 * 用户注册

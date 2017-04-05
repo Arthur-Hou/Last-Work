@@ -7,7 +7,7 @@ import com.extr.util.Page;
 
 /**
  * @author Ocelot
- * @date 2014年6月8日 下午5:52:55
+ * @date 2017年2月8日 下午5:52:55
  */
 public interface UserService {
 
