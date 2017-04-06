@@ -5,8 +5,8 @@ import java.io.Serializable;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- * @author Ocelot
- * @date 2014年6月8日 下午10:15:55
+ * @author 
+ * @date 
  */
 @XmlRootElement
 public class QuestionFilter implements Serializable {

@@ -13,20 +13,20 @@ import org.springframework.security.authentication.AuthenticationServiceExceptio
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
-import org.springframework.security.core.userdetails.UserDetails;
+//import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.util.StringUtils;
 
 import com.extr.domain.user.User;
-import com.extr.security.UserDetailsServiceImpl;
+//import com.extr.security.UserDetailsServiceImpl;
 import com.extr.security.UserInfo;
 import com.extr.service.UserService;
 import com.extr.util.StandardPasswordEncoderForSha1;
 
 /**
- * 2013-7-13
+ * 2016
  * @author scar
  * 重写以添加验证码工具
  */
@@ -65,6 +65,11 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 			//System.out.println("用户名或密码错误！");
 			throw new AuthenticationServiceException("用户名或密码错误！");
 		}
+		
+		/*2017.4.7++++++++*/
+		if(!userDetails.getRolesName().contains("ROLE_ADMIN") && !userDetails.getRolesName().contains("ROLE_TEACHER")){
+			throw new AuthenticationServiceException("非管理用户，操作无效！");
+		}
 		UsernamePasswordAuthenticationToken authRequest = new UsernamePasswordAuthenticationToken(username, password);
 		this.setDetails(request, authRequest);
 		Authentication authentication = null;
@@ -73,8 +78,11 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 		}catch(Exception e){
 			e.printStackTrace();
 		}
-		
-		try{
+		/*2017.4.7++++++++*/
+		return authentication;
+	}
+	/*2017.4.7--------*/
+		/*try{
 			User tmpUser = new User();
 			tmpUser.setId(userDetails.getUserid());
 			tmpUser.setLoginTime(new Date());
@@ -84,14 +92,14 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 			log.info("记录最后登录时间失败！" + e.getClass().getName());
 		}
 		return authentication;
-	}
+	}*/
 	
 	protected void checkValidateCode(HttpServletRequest request){
 		HttpSession session = request.getSession();
 		
 		String sessionValidateCode = this.obtainSessionValidateCode(session);
 		//将验证码session清空
-		session.setAttribute(KAPTCHA_SESSION_KEY, null);
+		//session.setAttribute(KAPTCHA_SESSION_KEY, null);
 		String validateCodeParameter = this.obtainValidateCodeParameter(request);
 		
 		if(StringUtils.isEmpty(validateCodeParameter) || !sessionValidateCode.equalsIgnoreCase(validateCodeParameter)){
@@ -106,9 +114,10 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
     }
 
     protected String obtainSessionValidateCode(HttpSession session){
-        Object obj = session.getAttribute(KAPTCHA_SESSION_KEY);
-        return null == obj ? "" : obj.toString();
+        //Object obj = session.getAttribute(KAPTCHA_SESSION_KEY);
+        return null; //== obj ? "" : obj.toString();
     }
+    
     
     @Override
 	protected String obtainPassword(HttpServletRequest request) {

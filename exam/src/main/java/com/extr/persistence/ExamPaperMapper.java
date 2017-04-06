@@ -7,7 +7,28 @@ import org.apache.ibatis.annotations.Param;
 import com.extr.domain.exam.ExamPaper;
 import com.extr.util.Page;
 
+import org.apache.ibatis.annotations.Param;
+
+import com.extr.domain.exam.ExamPaper;
+import com.extr.util.Page;
+
 public interface ExamPaperMapper {
+
+	public List<ExamPaper> getExamPaperList(@Param("searchStr") String searchStr,@Param("paperType") String paperType, @Param("page") Page<ExamPaper> page);
+	
+	public void insertExamPaper(ExamPaper examPaper);
+	
+	public ExamPaper getExamPaperById(int examPaperId);
+	
+	public void updateExamPaper(ExamPaper examPaper);
+	
+	public void deleteExamPaper(int id);
+	
+	public List<ExamPaper> getEnabledExamPaperList(@Param("userName") String userName,@Param("page") Page<ExamPaper> page);
+}
+
+
+/*public interface ExamPaperMapper {
 
 	public void insertExamPaper(ExamPaper examPaper);
 
@@ -23,3 +44,4 @@ public interface ExamPaperMapper {
 	
 	public void deleteExamPaper(int id);
 }
+*/

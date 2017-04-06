@@ -5,8 +5,8 @@ import org.apache.ibatis.annotations.Param;
 import com.extr.domain.exam.PracticePaper;
 
 /**
- * @author Ocelot
- * @date 2014年6月8日 下午8:40:22
+ * @author 
+ * @date 
  */
 public interface PracticeMapper {
 

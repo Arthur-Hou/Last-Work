@@ -1,9 +1,9 @@
 package com.extr.security;
 
-import java.util.Date;
+//import java.util.Date;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+/*import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
@@ -15,6 +15,17 @@ import org.springframework.stereotype.Component;
 import com.extr.controller.ExamController;
 import com.extr.domain.user.Role;
 import com.extr.domain.user.User;
+import com.extr.persistence.UserMapper;*/
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.AuthorityUtils;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Component;
+
+import com.extr.domain.user.Role;
+import com.extr.domain.user.User;
 import com.extr.persistence.UserMapper;
 
 @Component("userDetailsServiceImpl")
@@ -24,8 +35,21 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 	@Autowired
 	public UserMapper userMapper;
 	
-
-	public UserMapper getUserMapper() {
+	public UserDetails loadUserByUsername(String username)
+			throws UsernameNotFoundException {
+		// TODO Auto-generated method stub
+		
+		User user = userMapper.getUserByName(username);
+		if(user == null)
+			throw new UsernameNotFoundException("user not found!");
+		//roles=角色代码
+		List<GrantedAuthority> authorities = AuthorityUtils.commaSeparatedStringToAuthorityList(user.getRoles());
+		userInfo = new UserInfo(username,user.getPassword(),true,true,true,true,authorities);
+		userInfo.setUserid(user.getUserId());
+		userInfo.setRolesName(user.getRoles());
+		return userInfo;
+	}
+	/*public UserMapper getUserMapper() {
 		return userMapper;
 	}
 
@@ -49,8 +73,8 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 		if(user == null)
 			throw new UsernameNotFoundException("user not found!");
 		List<Role> roleList = userMapper.getRoleListByUserId(user.getId(),null);
-		/*List<UserGroup> userGroupList = userMapper.getUserGroupListByUserId(user.getId());
-		List<Job> jobList = userMapper.getJobListByUserId(user.getId(), null);*/
+		List<UserGroup> userGroupList = userMapper.getUserGroupListByUserId(user.getId());
+		List<Job> jobList = userMapper.getJobListByUserId(user.getId(), null);
 		user.setRoleListStack(roleList);
 		String roles = "";
 		String rolesName = "";
@@ -75,7 +99,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 		
 		return userInfo;
 	}
-	
+	*/
 	
 	
 }

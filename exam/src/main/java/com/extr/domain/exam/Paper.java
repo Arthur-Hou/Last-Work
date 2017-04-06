@@ -46,6 +46,10 @@ public class Paper {
 	private HashMap<Integer, Integer> questionTypeNum;
 	// 每种题型的分数
 	private HashMap<Integer, Float> questionTypePoint;
+	//知识点字典
+	private HashMap<Integer,String> knowledgeMap;
+	//试题类型字典
+	private HashMap<Integer,String> typeMap;
 	/**
 	 * 知识点概率分布
 	 */
@@ -65,12 +69,17 @@ public class Paper {
 			HashMap<Integer, HashMap<Integer, List<QuestionStruts>>> questionMap,
 			HashMap<Integer, Integer> questionTypeNum,
 			HashMap<Integer, Float> questionTypePoint,
-			HashMap<Integer, Float> knowledgePointRate) {
+			HashMap<Integer, Float> knowledgePointRate,
+			HashMap<Integer,String> knowledgeMap,
+			HashMap<Integer,String> typeMap
+			) {
 
 		this.questionMap = questionMap;
 		this.questionTypeNum = questionTypeNum;
 		this.questionTypePoint = questionTypePoint;
 		this.knowledgePointRate = knowledgePointRate;
+		this.knowledgeMap = knowledgeMap;
+		this.typeMap = typeMap;
 	}
 
 	public void createPaper() throws Exception {

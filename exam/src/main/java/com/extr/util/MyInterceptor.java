@@ -3,10 +3,6 @@ package com.extr.util;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
 import java.util.Properties;
 
 import org.apache.commons.logging.Log;
@@ -18,8 +14,6 @@ import org.apache.ibatis.executor.statement.RoutingStatementHandler;
 import org.apache.ibatis.executor.statement.StatementHandler;
 import org.apache.ibatis.mapping.BoundSql;
 import org.apache.ibatis.mapping.MappedStatement;
-import org.apache.ibatis.mapping.ParameterMap;
-import org.apache.ibatis.mapping.ParameterMapping;
 import org.apache.ibatis.plugin.Interceptor;
 import org.apache.ibatis.plugin.Intercepts;
 import org.apache.ibatis.plugin.Invocation;
@@ -37,8 +31,8 @@ public class MyInterceptor implements Interceptor {
 
 	private Page<?> page;
 	private static Log log = LogFactory.getLog(MyInterceptor.class);
-	@Override
-	public Object intercept(Invocation invocation) throws Throwable {
+
+	public synchronized Object intercept(Invocation invocation) throws Throwable {
 		// TODO Auto-generated method stub
 		try{
 			RoutingStatementHandler handler = (RoutingStatementHandler) invocation.getTarget();
@@ -86,13 +80,13 @@ public class MyInterceptor implements Interceptor {
 	    return result;
 	}
 
-	@Override
+	//@Override
 	public Object plugin(Object target) {
 		// TODO Auto-generated method stub
 		return Plugin.wrap(target, this);
 	}
 
-	@Override
+	//@Override
 	public void setProperties(Properties properties) {
 		// TODO Auto-generated method stub
 		/*String prop1 = properties.getProperty("prop1");
@@ -108,14 +102,14 @@ public class MyInterceptor implements Interceptor {
 		return null;
 	}
 	
-	public String getMySqlPageSql(Page<?> page, StringBuffer sqlBuffer) {
+	public synchronized String getMySqlPageSql(Page<?> page, StringBuffer sqlBuffer) {
 		int offset = (page.getPageNo() - 1) * page.getPageSize();
 		if (!page.isGetAllRecord())
 			sqlBuffer.append(" limit ").append(offset).append(",").append(page.getPageSize());
 		return sqlBuffer.toString();
 	}
 	
-	public String getCountSql(String sql){
+	public synchronized String getCountSql(String sql){
 		/*int index = sql.toLowerCase().indexOf("from");
 		String countSql = "select count(1) " + sql.substring(index);
 		index = countSql.toLowerCase().indexOf("order by");
@@ -128,7 +122,7 @@ public class MyInterceptor implements Interceptor {
 		return countSql;
 	}
 	
-	public void setTotalRecord(BoundSql boundSql,MappedStatement mappedStatement,Connection connection){
+	public synchronized void setTotalRecord(BoundSql boundSql,MappedStatement mappedStatement,Connection connection){
 		
 		String sql = boundSql.getSql();
 		String countSql = this.getCountSql(sql);

@@ -13,6 +13,7 @@ public class Tag implements Serializable {
     private String tagName;
     private Date createTime;
     private int creator;
+    private String creatorName;
     private boolean privatee;
     private String memo;
 
@@ -63,4 +64,12 @@ public class Tag implements Serializable {
     public void setMemo(String memo) {
         this.memo = memo;
     }
+
+	public String getCreatorName() {
+		return creatorName;
+	}
+
+	public void setCreatorName(String creatorName) {
+		this.creatorName = creatorName;
+	}
 }

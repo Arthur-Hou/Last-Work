@@ -1,14 +1,13 @@
 package com.extr.util;
 
-import java.util.HashMap;
 import java.util.Iterator;
 
-import com.extr.controller.domain.AnswerSheetItem;
-import com.extr.controller.domain.QuestionQueryResult;
+import com.extr.domain.exam.AnswerSheetItem;
+import com.extr.domain.question.QuestionQueryResult;
 import com.extr.domain.question.Question;
 import com.extr.domain.question.QuestionContent;
 import com.extr.util.xml.Object2Xml;
-
+import com.google.gson.Gson;
 public class QuestionAdapter {
 
 	private Question question;
@@ -35,11 +34,13 @@ public class QuestionAdapter {
 	 */
 	public QuestionAdapter(Question question, AnswerSheetItem answerSheetItem,
 			QuestionQueryResult questionQueryResult, String baseUrl) {
+		
 		this.question = question;
 		this.answerSheetItem = answerSheetItem;
 		this.questionQueryResult = questionQueryResult;
-		this.questionContent = Object2Xml.toBean(question.getContent(),
-				QuestionContent.class);
+		Gson gson = new Gson();
+		this.questionContent = gson.fromJson(question.getContent(), QuestionContent.class);
+		
 		this.baseUrl = baseUrl;
 	}
 	
@@ -47,16 +48,16 @@ public class QuestionAdapter {
 			QuestionQueryResult questionQueryResult, String baseUrl) {
 		this.answerSheetItem = answerSheetItem;
 		this.questionQueryResult = questionQueryResult;
-		this.questionContent = Object2Xml.toBean(questionQueryResult.getContent(),
-				QuestionContent.class);
+		Gson gson = new Gson();
+		this.questionContent = gson.fromJson(question.getContent(), QuestionContent.class);
 		this.baseUrl = baseUrl;
 	}
 
 	public QuestionAdapter(QuestionQueryResult questionQueryResult,
 			String baseUrl) {
 		this.questionQueryResult = questionQueryResult;
-		this.questionContent = Object2Xml.toBean(
-				questionQueryResult.getContent(), QuestionContent.class);
+		Gson gson = new Gson();
+		this.questionContent = gson.fromJson(questionQueryResult.getContent(), QuestionContent.class);
 		this.baseUrl = baseUrl;
 	}
 
@@ -663,7 +664,7 @@ public class QuestionAdapter {
 					.append("</span><br>");
 
 		sb.append("<span>  你的解答：</span>");
-		if (answerSheetItem.getQuestion_type_id() == 3) {
+		if (answerSheetItem.getQuestionTypeId() == 3) {
 			if (answerSheetItem.getAnswer().trim().equals("T"))
 				sb.append("<span>").append("对").append("</span>");
 			else if (answerSheetItem.getAnswer().trim().equals("F"))
@@ -1015,7 +1016,7 @@ public class QuestionAdapter {
 		if (answerSheetItem != null) {
 
 			sb.append("<span>  你的解答：</span>");
-			if (answerSheetItem.getQuestion_type_id() == 3) {
+			if (answerSheetItem.getQuestionTypeId() == 3) {
 				if (answerSheetItem.getAnswer().trim().equals("T"))
 					sb.append("<span>").append("对").append("</span>");
 				else if (answerSheetItem.getAnswer().trim().equals("F"))
